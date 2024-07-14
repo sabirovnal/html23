@@ -51,60 +51,220 @@ h1 {
     background-color: white;
 }
 
-.infowrapper {
-    background-image: url(../html_css_js\ 1.png);
-    background-position: right 58px top 121px;
-    background-repeat: no-repeat;
-    background-size: 30vw ;
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
 }
 
-.head {
-    margin-top: 100px;
-    margin: 0px;
-    padding: 0;
-    background-color: #6E3ABA;
-    margin-top: calc(4.5vw + 22.1px);
+.course-section {
+    text-align: center;
+    padding: 50px 20px;
+    background-color: #f5f5f5;
 }
-.tiitle {
-    font-size: calc(12.8vw + 9. 11px);
-    font-family:'Times New Roman';
-}
-.subtiitle {
-    font-size: calc(1.2vw + 2.41px);
-}
-.timer {
+
+.course-options {
     display: flex;
-    flex-direction: column;
-    align-items: center;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    gap: 20px;
+    margin-top: 20px;
 }
-.input {
-    font-size: calc(1.01vw + 13.9px);
+
+.option {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    width: calc(50% - 40px);
+    margin-bottom: 20px;
+    box-sizing: border-box;
 }
-.paragraph {
-    display: flex;
-    font-size: 18px;
-    margin-top: calc(6.3vw + 8px);
-    flex-direction: row;
-    justify-content: center;
-    align-items: center;
+
+.option img {
+    max-width: 100px;
+    margin-bottom: 10px;
 }
-.btn {
-    width: 328px;
-    background-color: white;
-    border-radius: 12px;
-    height: 60px;
-    margin-bottom: calc(5.3vw + 20px);
+
+.option h2 {
+    font-size: 1.2em;
+    margin: 10px 0;
+}
+
+.option p {
+    font-size: 0.9em;
+    color: #666;
 }
 
 .discount {
-    font-size: calc(2.03vw + 25.9px);
-    text-align: center;
-    margin-top: calc(4.5vw + 22.1px);
+    background-color: #6c23a2;
+    color: #fff;
+    padding: 20px;
+    border-radius: 10px;
+    margin-top: 30px;
 }
+
+.discount h2 {
+    margin: 0;
+}
+
 .timer {
-    margin-top: calc(4.1vw + 3.48px
     display: flex;
-    flex-direction: row;
     justify-content: center;
-    gap: 90px;
+    gap: 10px;
+    margin-top: 20px;
+}
+
+.time-box {
+    background-color: #fff;
+    color: #6c23a2;
+    padding: 10px;
+    border-radius: 10px;
+    width: 60px;
+    font-size: 1.5em;
+    font-weight: bold;
+}
+
+.time-box span {
+    display: block;
+    font-size: 0.6em;
+    margin-top: 5px;
+}
+
+button {
+    background-color: #ff8800;
+    border: none;
+    color: #fff;
+    padding: 10px 20px;
+    border-radius: 5px;
+    margin-top: 20px;
+    cursor: pointer;
+    font-size: 1em;
+}
+
+button:hover {
+    background-color: #e67600;
+}
+
+.instructor-section {
+    text-align: left;
+    left: 120px;
+    padding: 50px 20px;
+    background-color: #fff;
+}
+
+.instructor-info {
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    margin-top: 20px;
+}
+
+.instructor-info img {
+    width: 339px;
+    height: 462px;
+    top:158px;
+    left:119px;
+}
+
+.instructor-details {
+    max-width: calc(100% - 200px);
+    justify-content:space-between;
+    display:inline-block;
+}
+
+.instructor-details h3 {
+    font-family: arial;
+    font-size: 1.5em;
+    margin: 0 0 10px;
+}
+
+.instructor-details p {
+    font-size: 1em;
+    color: #333;
+}
+
+.instructor-details ul {
+    list-style: none;
+    padding: 0;
+    margin: 10px 0 0;
+}
+
+.instructor-details ul li {
+    font-size: 1em;
+    color: #666;
+    margin: 5px 0;
+}
+
+.benefits {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    gap: 20px;
+    margin-top: 30px;
+}
+
+.benefit {
+    width: calc(50% - 40px);
+    text-align: left;
+    margin-bottom: 20px;
+    box-sizing: border-box;
+}
+
+.benefit h2 {
+    font-size: 1.2em;
+    margin: 0 0 10px;
+}
+
+.benefit p {
+    font-size: 0.9em;
+    color: #666;
+}
+
+.course-program {
+    text-align: center;
+    padding: 50px 20px;
+    background-color: #fff;
+}
+
+.course-program h1 {
+    font-size: 2em;
+    margin-bottom: 20px;
+}
+
+.program-list {
+    list-style: none;
+    padding: 0;
+    margin: 0 auto 20px;
+    max-width: 600px;
+    text-align: left;
+}
+
+.program-list li {
+    background: #f9f9f9;
+    border: 1px solid #ddd;
+    margin: 10px 0;
+    padding: 10px;
+    font-size: 1em;
+}
+
+.course-program button {
+    background-color: #6c23a2;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    font-size: 1em;
+    cursor: pointer;
+}
+
+.course-program button:hover {
+    background-color: #5a1d86;
+}
+
+.diploma-section {
+    padding: 50px 20px;
+    background-color: #f5f5f5;
+    text-align:start;
 }
